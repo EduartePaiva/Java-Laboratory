@@ -1,4 +1,4 @@
-package PackagesLesson;
+package tools;
 
 public class Toolbox {
 
