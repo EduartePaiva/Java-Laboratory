@@ -1,11 +1,15 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
 public class CollectionsLesson {
     void main() {
+        System.out.println("\n---------ARRAY LIST-----------\n");
+
         List<Integer> nums = new ArrayList<>();
         nums.add(6);
         nums.add(5);
@@ -18,7 +22,7 @@ public class CollectionsLesson {
             System.out.println(n);
         }
 
-        System.out.println("\n--------------------\n");
+        System.out.println("\n---------HASH SET-----------\n");
 
         Set<Integer> nums2 = new HashSet<>();
         nums2.add(86);
@@ -30,7 +34,7 @@ public class CollectionsLesson {
             System.out.println(n);
         }
 
-        System.out.println("\n--------------------\n");
+        System.out.println("\n----------TREE SET----------\n");
 
         Set<Integer> nums3 = new TreeSet<>();
         nums3.add(86);
@@ -40,6 +44,22 @@ public class CollectionsLesson {
 
         for (int n : nums3) {
             System.out.println(n);
+        }
+
+        System.out.println("\n----------MAP----------\n");
+
+        Map<String, Integer> students = new HashMap<>();
+
+        students.put("Edu", 56);
+        students.put("Ana", 23);
+        students.put("Alice", 67);
+        students.put("Davi", 90);
+        students.put("Ana", 45);
+
+        System.out.println(students.keySet());
+
+        for (String key : students.keySet()) {
+            System.out.println(key + " : " + students.get(key));
         }
 
     }
